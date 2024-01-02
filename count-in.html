@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="count-in.css">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="icon" href="images/Logo_png.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://www.dafontfree.net/embed/ZnV0dXJhdGVlLXJlZ3VsYXImZGF0YS8yNS9mLzEyNTk1NC9GRTExMDAzVC50dGY"
+        rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <title>COUNTin Passion SRL</title>
+</head>
+<body>
+    <header class="pagina-acasa">
+        <nav class="navbar-count position-fixed">
+            <ul class="nav justify-content-around">
+                <li class="nav-item">
+                    <a class="nav-link" href="#home"><img class="logo" src="images/Logo-brand.png" alt=""></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link link-secondary my-1 fw-bold fs-4" href="#servicii">SERVICII</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link link-secondary my-1 fw-bold fs-4" href="#angajare">DESPRE NOI</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link link-secondary my-1 fw-bold fs-4" href="#preturi">PRETURI</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link link-secondary my-1 fw-bold fs-4" href="#contact">CONTACT</a>
+                </li>
+                <li>
+                    <button class="btn btn-outline-danger float-end fw-bold border-3 my-2" data-bs-toggle="modal" data-bs-target="#btn-offer">SOLICITA OFERTA</button>
+                </li>
+            </ul>
+
+            <div class="modal fade" id="btn-offer">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Solicit oferta personalizata</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+            
+                            <form>
+                                <div class="mb-3">
+                                    <label for="exampleInputName" class="form-label">Nume</label>
+                                    <input type="name" class="form-control" id="exampleInputName" aria-describedby="nameHelp">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleInputEmail1" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleInputTelephon" class="form-label">Telefon</label>
+                                    <input type="telephon" class="form-control" id="exampleInputTelephon">
+                                </div>
+                                <div class="mb-3 form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1"><a
+                                            class="link-dark link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                                            href="">Accept termenii si conditiile</a></label>
+                                </div>
+                            </form>
+            
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"><i
+                                    class="bi bi-envelope-arrow-up"></i> Trimite</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <main class="main-pagina-acasa" id="home">
+            <h1 style="padding-bottom: 0.5em;">Businessul Tau - <span class="main-titlu">Pasiunea Noastra!</span></h1>
+            <p class="main-content">Oferim servicii de contabilitate, salarizare si consultanta in domeniul financiar-contabil. Pentru antreprenorii in miscare si continua crestere - serviciile noastre ajuta sa reduci perturbarile si sa fii cu un pas inaintea schimbarilor care iti afecteaza
+            afacerea.</p>
+            <button class="pagina-acasa-buton border-0" data-bs-toggle="modal" data-bs-target="#btn-cons"><a type="button" class="btn btn-danger btn-lg" href="#">CONSULTATIE GRATUITA</a></button>
+
+            <div class="modal fade" id="btn-cons">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Solicit o consultatie gratuita</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+            
+                            <form>
+                                <div class="mb-3">
+                                    <label for="exampleInputName" class="form-label">Nume</label>
+                                    <input type="name" class="form-control" id="exampleInputName" aria-describedby="nameHelp">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleInputEmail1" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleInputTelephon" class="form-label">Telefon</label>
+                                    <input type="telephon" class="form-control" id="exampleInputTelephon">
+                                </div>
+                                <div class="mb-3 form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1"><a
+                                            class="link-dark link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                                            href="">Accept termenii si conditiile</a></label>
+                                </div>
+                            </form>
+            
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"><i
+                                    class="bi bi-envelope-arrow-up"></i> Trimite</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </header>
+
+    <section class="pagina-servicii" id="servicii">
+        <h1 class="pg-servicii-title">SERVICIILE NOASTRE</h1>
+        <article class="d-flex justify-content-evenly pg-servicii-article">
+            <div class="middle-article__info">
+                <h3>INITIEREA AFACERII</h3>
+                <p>Oferim <a class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#btn-consultancy"
+                        href="#">consultatie
+                        gratuita</a>, potentialilor clienții, înainte
+                    de inițierea unei afaceri, oferindu-le informații utile de urmat in procesul fondarii companiei.</p>
+                <ol>
+                    <li>Ideea</li>
+                    <li>Elaborarea unui plan de afaceri</li>
+                    <li>Alegere tip de entitate</li>
+                    <li>Inregistrarea de stat</li>
+                    <li>Obtinerea de certificate si licente</li>
+                    <li>Instituirea unui sistem de contabilitate</li>
+                </ol>
+        
+            </div>
+        
+            <div class="modal fade my-5" style="z-index: 100000;" id="btn-consultancy">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Solicit o consultatie gratuita</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+        
+                            <form>
+                                <div class="mb-3">
+                                    <label for="exampleInputName" class="form-label">Nume</label>
+                                    <input type="name" class="form-control" id="exampleInputName" aria-describedby="nameHelp">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleInputEmail1" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1"
+                                        aria-describedby="emailHelp">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleInputTelephon" class="form-label">Telefon</label>
+                                    <input type="telephon" class="form-control" id="exampleInputTelephon">
+                                </div>
+                                <div class="mb-3 form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1"><a
+                                            class="link-dark link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                                            href="">Accept termenii si conditiile</a></label>
+                                </div>
+                            </form>
+        
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"><i
+                                    class="bi bi-envelope-paper"></i> Trimite</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="middle-article__info">
+                <h3>EVIDENTA CONTABILA</h3>
+                <p>Serviciile noastre de baza consta in preluarea și prelucrarea documentelor
+                    intreprinderii Dumneavoastra, conform legislatiei in vigoare.</p>
+                <ol>
+                    <li>Colectarea documentelor</li>
+                    <li>Prelucrarea documentelor</li>
+                    <li>Evidenta analitica si sintetica</li>
+                    <li>Evidenta activelor si pasivelor</li>
+                    <li>Inventarierea si calculatia costurilor</li>
+                    <li>Raportarea lunara, trimestriala si anuala</li>
+                    <li>Arhivarea si pastrarea documentelor</li>
+                </ol>
+            </div>
+        
+            <div class="middle-article__info">
+                <h3>CONSILIERE FISCALA</h3>
+                <p>Consultanţa fiscală oferită vine în ajutorul companiilor în perioada
+                    controalelor fiscale. Asigura asistență şi informare privind legislaţia fiscală.</p>
+                <ol>
+                    <li>Consultanță privind optimizarea fiscală</li>
+                    <li>Calcularea si informare referitor la impozite si contribuţii</li>
+                    <li>Informarea privind reglementările fiscale şi financiar-contabile</li>
+                    <li>Consultanță în alegerea sistemului informatic</li>
+                </ol>
+            </div>
+        
+            <div class="middle-article__info">
+                <h3>EVIDENTA <br> HR</h3>
+                <p>Acordam tot suportul zilnic ce tine de certificate, modificări în contract, acte adiționale etc., formarea
+                    dosarului de angajare și eliberare din funcție.</p>
+                <ol>
+                    <li>Calculul salariului și a impozitelor aferente</li>
+                    <li>Formarea dosarului corect și complet al noului angajat</li>
+                    <li>Întocmirea diverselor certificate</li>
+                    <li>Completarea dărilor de seamă privind salariile</li>
+                    <li>Calculul indemnizațiilor</li>
+                    <li>Analiza tabelului de pontaj</li>
+                </ol>
+            </div>
+        </article>
+    </section>
+
+    <section class="pagina-angajare" id="angajare">
+        <div class="fon-transparent"></div>
+        <div class="fon-rosu"></div>
+        <img class="angajare-person" src="images/person.png" alt="">
+        <h1 class="angajare-title">Buna, eu sunt <br> contabilul tau, <span style="color: red;">Marina!</span></h1>
+        <p class="angajare-paragraf">Misiunea mea este de a furniza servicii de cea mai inalta calitate, asigurind linistea si confortul clientilor. 
+            Ofer servicii de evidenta contabila pentru afaceri din diverse domenii de
+        activitate, incepind de la prelucrarea documentelor primare si pina la elaborarea rapoartelor financiare.</p>
+        <button class="angajare-buton border-0"><a type="button" class="btn btn-danger btn-lg" href="tel:+37362188771">CONTACTEAZA-MA</a></button>
+    </section>
+
+    <section class="pagina-preturi" id="preturi">
+        <h1 class="pg-preturi-title">PRETURI SI PACHETE</h1>
+        <article class="d-flex flex-row price-section">
+            <div class="card mx-auto bg-info price-section__card">
+                <img src="images/money-1.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Pachet Basic (1000-2000 lei)</h5>
+                    <ul class="list-group">
+                        <li class="list-group-item">- 1-3 salariati</li>
+                        <li class="list-group-item">- venit din vinzari < 300 000 lei</li>
+                        <li class="list-group-item">- prelucrare documente primare</li>
+                        <li class="list-group-item">- perfectare si prezentare darilor de seama</li>
+                        <li class="list-group-item">- evidenta salariului</li>
+                    </ul>
+                    <a href="#" class="btn btn-light my-2 d-block mx-auto" data-bs-toggle="modal"
+                        data-bs-target="#aplly">APLICA</a>
+                </div>
+            </div>
+            
+            <div class="card mx-auto bg-info price-section__card">
+                <img src="images/coins-5651924_640.png" class="card-img-top img-fluid" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title" style="letter-spacing: -0.8px;">Pachet Standard (2500-4500 lei)</h5>
+                    <ul class="list-group">
+                        <li class="list-group-item">- 3-15 salariati</li>
+                        <li class="list-group-item">- venit din vinzari < 1 200 000 lei</li>
+                        <li class="list-group-item">- prelucrare documente primare</li>
+                        <li class="list-group-item">- perfectare si prezentare darilor de seama</li>
+                        <li class="list-group-item">- evidenta salariului</li>
+                    </ul>
+                    <a href="#aplly" class="btn btn-dark my-4 d-block mx-auto" data-bs-toggle="modal"
+                        data-bs-target="#aplly">APLICA</a>
+                </div>
+            </div>
+            
+            <div class="card mx-auto bg-info price-section__card">
+                <img src="images/money-3.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Pachet Pro (5000-9000 lei)</h5>
+                    <ul class="list-group">
+                        <li class="list-group-item">- 15-40 salariati</li>
+                        <li class="list-group-item">- venit din vinzari < nelimitat</li>
+                        <li class="list-group-item">- prelucrare documente primare</li>
+                        <li class="list-group-item">- perfectare si prezentare darilor de seama</li>
+                        <li class="list-group-item">- evidenta salariului</li>
+                    </ul>
+                    <a href="#aplly" class="btn btn-light my-2 d-block mx-auto" data-bs-toggle="modal"
+                        data-bs-target="#aplly">APLICA</a>
+                </div>
+            </div>
+        </article>
+    </section>
+
+    <footer class="pagina-contacte" id="contact">
+        <article class="d-flex flex-row price-section">
+            <div class="card mx-auto bg-info price-section__card">
+                <div class="card-body">
+                    <h5 class="card-title">Pret pentru entitatile fara activitate (lunar):</h5>
+                    <div class="input-group mb-3">
+                        <div class="input-group-text">
+                            <input class="form-check-input mt-0" type="checkbox" value=""
+                                aria-label="Checkbox for following text input">
+                        </div>
+                        <span style="width: 25.5em;" class="input-group-text input-span">Neplatitoare de TVA - 300 lei</span>
+                    </div>
+                    <div class="input-group mb-3">
+                        <div class="input-group-text">
+                            <input class="form-check-input mt-0" type="checkbox" value=""
+                                aria-label="Checkbox for following text input">
+                        </div>
+                        <span style="width: 25.5em;" class="input-group-text input-span">Platitoare de TVA - 500 lei</span>
+                    </div>
+                    <a href="#aplly" class="btn btn-light my-2 d-block mx-auto" data-bs-toggle="modal"
+                        data-bs-target="#aplly">APLICA</a>
+                </div>
+            </div>
+            
+            <div class="card mx-auto bg-info price-section__card">
+                <div class="card-body mx-auto">
+                    <h5 class="card-title">Intreprinderile cu alte genuri de activitate</h5>
+                    <div class="input-group mb-3">
+                        <span style="width: 25.5em;" class="input-group-text">IT - reducere 15% din costul pachetului</span>
+                    </div>
+                    <div class="input-group mb-3">
+                        <span style="width: 25.5em;" class="input-group-text">Constructii si transport + 15% la costul
+                            pachetului</span>
+                    </div>
+                    <div class="input-group mb-3">
+                        <span style="width: 25.5em;" class="input-group-text">Comert + 35% la costul pachetului</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="modal fade my-5" style="z-index: 100000;" id="aplly">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Aplica pentru oferta</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+            
+                            <form>
+                                <div class="mb-3">
+                                    <label for="exampleInputName" class="form-label">Nume</label>
+                                    <input type="name" class="form-control" id="exampleInputName" aria-describedby="nameHelp">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleInputEmail1" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleInputTelephon" class="form-label">Telefon</label>
+                                    <input type="telephon" class="form-control" id="exampleInputTelephon">
+                                </div>
+                                <div class="mb-3 form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1"><a
+                                            class="link-dark link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                                            href="">Accept termenii si conditiile</a></label>
+                                </div>
+                            </form>
+            
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"><i
+                                    class="bi bi-envelope-paper"></i> Aplica</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <h3 class="contacts-title">Date de contact:</h3>
+            <ul class="count-header_list float-start d-grid fw-bold">
+                <li class="list-inline-item"><a
+                        class="link-light link-underline link-underline-opacity-0 link-offset-1 link-underline-opacity-100-hover"
+                        href="tel:+37362188771"><i class="bi bi-telephone"></i> +373 (62) 188-771</a></li>
+                <li class="list-inline-item"><a
+                        class="link-light link-underline link-underline-opacity-0 link-offset-1 link-underline-opacity-100-hover"
+                        href="https://map.md/ro/street/481918768?number=15#13.9/47.0388/28.80188"><i class="bi bi-geo-alt"></i>
+                        Chisinau, str. Calea Iesilor, 15</a></li>
+                <li class="list-inline-item"><i class="bi bi-clock"></i> Luni-Vineri: 09:00-16:00</li>
+                <li class="list-inline-item"><a
+                        class="link-light link-underline link-underline-opacity-0 link-offset-1 link-underline-opacity-100-hover"
+                        href="mailto:countinpassion@gmail.com"><i class="bi bi-envelope"></i> countinpassion@gmail.com</a></li>
+            </ul>
+        <div class="retele-sociale d-flex">
+            <a href="https://www.facebook.com/couninpassion"><img src="images/facebook.png" alt=""></a>
+            <a href="#"><img src="images/viber.png" alt=""></a>
+            <a href="#"><img src="images/instagram.png" alt=""></a>
+            <a href="#"><img src="images/whatsapp.png" alt=""></a>
+            <a href="#"><img src="images/gmail.png" alt=""></a>
+            <form class="form">
+                <h2 class="h2">Abonați-vă la buletinul nostru informativ</h2>
+                <label>
+                    <input style="margin-left: 1em;" name="termenii" type="checkbox" required>
+                    <span><a href="#">Accept termenii si conditiile serviciului</a></span>
+                </label><br>
+                <label class="email">
+                    <input class="input" type="text" name="email" placeholder="countinpassion@gmail.com" required autofocus>
+                </label>
+                <button class="button">ABONARE</button>
+            </form>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+</html>

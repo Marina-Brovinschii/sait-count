@@ -1,0 +1,419 @@
+@use 'sass:list';
+
+$colors:white, red, #EDEDED, black;
+$fontFamily: 'futuratee-regular', sans-serif;
+$size:10px;
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: $fontFamily;
+}
+.pagina-acasa {
+    inline-size: 100vw;
+    block-size: 100vh;
+    background-image: url(images/page1.jpg);
+    background-size: cover;
+    .navbar-count {
+        inline-size: 100%;
+        background-color: list.nth($colors, 1);
+        z-index: 1;
+        .logo {
+            margin-inline-end: 20em;
+        }
+    }
+    .main-pagina-acasa {
+        padding-block-start: 14%;
+        inline-size: 70%;
+        position: relative;
+        left: 10%;
+        .main-titlu {
+            color: list.nth($colors, 2);
+            font-weight: 800;
+            font-size: $size*5;
+        }
+        .main-content {
+            font-size: $size*2.5;
+        }
+        .pagina-acasa-buton {
+            position: relative;
+            left: 50em;
+            top: 3em;
+        }
+    }
+}
+.pagina-servicii {
+    inline-size: 100vw;
+    block-size: 100vh;
+    background-image: conic-gradient(at 50% 30%, list.nth($colors, 2) 23%, list.nth($colors, 3) 23% 77%, list.nth($colors, 2) 77%);
+    .pg-servicii-title {
+        color: list.nth($colors, 1);
+        font-size: $size*6;
+        padding-block-start: 1.5em;
+        text-align: center;
+    }
+    .pg-servicii-article {
+        margin-block-start: 6em;
+    }
+    .middle-article__info {
+        font-family: $fontFamily;
+        inline-size: $size*30;
+        padding: $size*2 $size*2 $size $size*2;
+        background-color: list.nth($colors, 1);
+        border-radius: 5%;
+        h3 {
+            text-align: center;
+            color: list.nth($colors, 2);
+            font-weight: 600;
+        }
+    }
+}
+.pagina-angajare {
+    inline-size: 100vw;
+    block-size: 100vh;
+    background-color: list.nth($colors, 3);
+    overflow: hidden;
+    position: relative;
+    .fon-transparent {
+        transform: translateX(120%) translateY(-40%);
+        inline-size: 50em;
+        block-size: 50em;
+        border-radius: 50%;
+        border: 5px solid list.nth($colors, 1);
+        background-image: radial-gradient(transparent 0 48%, white 48% 49%, transparent 49% 60%, white 60% 61%, transparent 61% 100%);
+    }
+    .fon-rosu {
+        transform: translateX(-25%) translateY(-60%);
+        inline-size: 60em;
+        block-size: 60em;
+        border-radius: 50%;
+        background-image: radial-gradient(red 0 27%, white 27% 28%, red 28% 38%, white 38% 39%, red 39% 50%, white 50% 51%, red 51% 100%);
+    }
+    .angajare-person {
+        inline-size: 27em;
+        block-size: 46em;
+        position: absolute;
+        top: 6em;
+        left: 10em;
+    }
+    .angajare-title {
+        position: absolute;
+        top: 3em;
+        right: 5em;
+        color: list.nth($colors, 4);
+        font-size: $size*5;
+        font-weight: 800;
+    }
+    .angajare-paragraf {
+        position: absolute;
+        inline-size: 35%;
+        top: 13em;
+        right: 9em;
+        font-size: $size*2.5;
+    }
+    .angajare-buton {
+        position: absolute;
+        bottom: 10em;
+        right: 15em;
+    }
+}
+.pagina-preturi {
+    inline-size: 100vw;
+    block-size: 100vh;
+    background-image: conic-gradient(at 50% 30%, list.nth($colors, 2) 23%, list.nth($colors, 3) 23% 77%, list.nth($colors, 2) 77%);
+    .pg-preturi-title {
+        color: list.nth($colors, 1);
+        font-size: $size*6;
+        padding-block-start: 1.6em;
+        text-align: center;
+    }
+    .price-section {
+        margin-block-start: 5em;
+        .price-section__card:nth-child(1), .price-section__card:nth-child(3) {
+            border: none;
+            inline-size: $size*40;
+            padding: $size/2;
+            block-size: 50%;
+            margin-block-start: $size*5;
+            background-color: list.nth($colors, 1) !important;
+            .card-img-top {
+                margin-block-start: 1em;
+            }
+            .card-title {
+                text-align: center;
+                margin-block-end: 1em;
+            }
+            img {
+                inline-size: $size*10;
+                margin: 0 auto;
+            }
+        }
+        .price-section__card:nth-child(2) {
+            border: none;
+            inline-size: $size*40;
+            padding: $size/2;
+            block-size: 32em;
+            margin-block-start: $size*2;
+            background-color: list.nth($colors, 2) !important;
+            .card-img-top {
+                    margin-block-start: 1em;
+                }
+                .card-title {
+                    text-align: center;
+                    margin-bottom: 2em;
+                    color: list.nth($colors, 1);
+                }
+                img {
+                    inline-size: $size*10;
+                    margin: 1em auto;
+                }
+        }
+    }
+}
+.pagina-contacte {
+    inline-size: 100vw;
+    block-size: 100vh;
+    background-image: conic-gradient(at 50% 55%, list.nth($colors, 3) 27%, list.nth($colors, 2) 27% 73%, list.nth($colors, 3) 73%);
+    .price-section__card {
+        inline-size: $size*50;
+        padding: $size/2;
+        block-size: 57%;
+        margin-block-start: $size*14;
+        background-color: list.nth($colors, 1) !important;
+        border: none;
+        .card-title {
+            text-align: center;
+            margin-block-end: 1em;
+        }
+    }
+    .contacts-title {
+        color: list.nth($colors, 1);
+        font-weight: 600;
+        margin-block-start: 6.5em;
+        padding-inline-start: 3em;
+    }
+    .count-header_list {
+        color: list.nth($colors, 1);
+        margin-inline-start: 4em;
+        li {
+            padding-block-start: 1em;
+        }
+    }
+    .retele-sociale {
+        a {
+            block-size: $size;
+            transform: translateX(13em) translateY(7em);
+            padding-inline-start: $size;
+            bottom: 2em;
+            img {
+                inline-size: $size*4;
+            }
+        }
+        .form {
+            background-color: list.nth($colors, 1);
+            padding: $size;
+            position: relative;
+            transform: translateX(27em) translateY(-2em);
+            border-radius: 10%;
+            inline-size: 25em;
+            block-size: 12em;
+            h2 {
+                font-size: $size*2.5;
+                color: list.nth($colors, 4);
+                text-align: center;
+            }
+            .input {
+                font-size: $size*1.5;
+                margin-inline-start: 1em;
+                inline-size: 23em;
+                padding-inline-start: $size*3;
+                background-image: url(images/at.svg);
+                background-position: left;
+                background-repeat: no-repeat;
+                border-radius: $size*1.5;
+            }
+            a {
+                color: list.nth($colors, 4);
+                text-decoration: none;
+                &:hover {
+                    text-decoration:underline;
+                }
+            }
+            .email {
+                margin: $size 0;
+            }
+            button {
+                margin-inline-start: 1.5em;
+                inline-size: $size*34.5;
+                block-size: $size*3;
+                border: none;
+                font-size: $size;
+                padding: $size/8;
+                color: transparent;
+                background-color: list.nth($colors, 2);
+                background-image: url(images/email-fast.svg);
+                background-repeat: no-repeat;
+                background-position: center;
+                border-radius: $size*1.5;
+            }
+        }
+    }
+}
+
+@media (max-width: 1400px) {
+    .angajare-title {
+        right: 4em !important;
+    }
+    .angajare-paragraf {
+        right: 8em !important;
+    }
+    .angajare-buton {
+        bottom: 7em !important;
+        right: 13em !important;
+    }
+    .retele-sociale {
+        a {
+            transform: translateX(9em) translateY(7em) !important;
+        }
+        .form {
+            transform: translateX(18em) translateY(-2em) !important;
+        }
+    }
+}
+@media (max-width: 1200px) {
+    .logo {
+        margin-inline-end: 8em !important;
+    }
+    .main-pagina-acasa {
+        left: 13% !important;
+        .pagina-acasa-buton {
+            left: 32em !important;
+            }
+    }
+    .middle-article__info {
+        inline-size: $size*28 !important;
+    }
+    .angajare-title {
+        right: 2em !important;
+    }
+    .angajare-paragraf {
+        right: 2em !important;
+    }
+    .angajare-buton {
+        bottom: 5em !important;
+        right: 4em !important;
+    }
+    .fon-rosu {
+        transform: translateX(-30%) translateY(-60%) !important;
+    }
+    .price-section__card {
+        inline-size: $size*35 !important;
+    }
+    .pagina-contacte {
+        .price-section__card {
+            inline-size: $size*45 !important;
+            .input-span {
+                width: 22.9em !important;
+            }
+        }
+    }
+    .retele-sociale {
+        a {
+            transform: translateX(3em) translateY(7em) !important;
+        }
+        .form {
+            transform: translateX(7em) translateY(-2em) !important;
+        }
+    }
+}
+@media (max-width: 992px) {
+    .navbar-count {
+        .nav-link {
+            font-size: $size*2 !important;
+        }
+        .logo {
+            margin-inline-end: 5em !important;
+        }
+    }
+    .main-pagina-acasa {
+        h1 {
+            inline-size: 65%;
+        }
+        .pagina-acasa-buton {
+            left: 25em !important;
+        }
+    }
+    .pagina-angajare {
+        .fon-rosu {
+            transform: translateX(-40%) translateY(-60%) !important;
+        }
+        .angajare-person {
+            left: 5em;
+        }
+        .angajare-title {
+            right: 1em !important;
+        }
+        .angajare-paragraf {
+            font-size: $size*2.3;
+        }
+        .angajare-buton {
+            bottom: 8em !important;
+        }
+    }   
+    .price-section {
+        margin-block-start: 5em;
+        .price-section__card:nth-child(1),
+        .price-section__card:nth-child(3) { 
+            inline-size: $size*30 !important;
+            block-size: 45%;
+        }
+    }
+    .pagina-contacte {
+        .price-section__card {
+            .input-group-text {
+                padding: $size/2 !important;
+            }
+            .input-span {
+                inline-size: 14em !important;
+            }
+        }
+        .contacts-title {
+            padding-inline-start: 2em !important;
+        }
+        .count-header_list {
+            li {
+                margin-left: -2em !important;
+            }
+        }
+        .retele-sociale {
+            a {
+                transform: translateX(0em) translateY(8em) !important;  
+                    img {
+                        inline-size: $size*3;
+                    }
+                }
+        .form {
+            transform: translateX(2em) translateY(-2em) !important;
+                }
+            }
+    }
+    .pagina-servicii {
+        .pg-servicii-article {
+            display: grid;
+        }
+    
+            .middle-article__info {
+                font-family: $fontFamily;
+                inline-size: $size*30;
+                padding: $size*2 $size*2 $size $size*2;
+                background-color: list.nth($colors, 1);
+                border-radius: 5%;
+    
+                h3 {
+                    text-align: center;
+                    color: list.nth($colors, 2);
+                    font-weight: 600;
+                }
+            }
+        }
+}
